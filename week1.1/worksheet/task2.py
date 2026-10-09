@@ -9,7 +9,11 @@ if __name__=='__main__':
 
     # Ask the user to input an amount they want to save every month - this should be an integer.
     # Validate that they have entered an integer.
-    saved_month=int(input("Please enter how many money do you want to save every month."))
+    try:
+        saved_month=int(input("Please enter how many money do you want to save every month."))
+    except ValueError:
+        print("Invalid amount")
+        exit()
 
     # Calculate the total amount of money they will have saved by the end of the year (amount per month multiplied by 12).
     # print this out for the user with a suitable message.
