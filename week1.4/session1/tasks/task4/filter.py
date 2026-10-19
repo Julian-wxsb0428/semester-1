@@ -8,7 +8,7 @@
 
 def filter_positive_numbers(numbers):
     """
-    Filters out positive numbers from the list, keeping only the negative ones.
+    Filters out negative numbers from the list, keeping only the positive ones.
     The function returns a list of all the positive numbers in the input.
 
     Args:
